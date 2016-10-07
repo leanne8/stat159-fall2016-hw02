@@ -6,3 +6,14 @@ output: pdf_document
 ---
 
 
+##Abstract
+
+##Introduction
+
+##Data 
+
+##Methodology
+
+##Results
+
+##Conclusions
