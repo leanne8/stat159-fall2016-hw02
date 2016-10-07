@@ -1,0 +1,8 @@
+---
+title: "Stat 159 HW 2"
+author: "Leanne Lee"
+date: "October 5, 2016"
+output: pdf_document
+---
+
+
