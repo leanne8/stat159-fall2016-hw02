@@ -22,10 +22,10 @@ The simple linear regression equation is the following:
 Y = A + Bx + e
 ```
 
-Y = Sales
-A = Intercept
-Bx = TV advertising 
-e = error 
+- Y = Sales
+- A = Intercept
+- Bx = TV advertising 
+- e = error 
 
 In R command, we can fit a linear regression model by using the **lm()** command. 
 The **null hypothesis** is there does not exist a relationship between TV ad and sales. The alternative hypothesis is that there exists a relationship between TV ad and sales. 
@@ -45,7 +45,7 @@ Adjusted R-Squared | 0.6099
 F-statistics | 312.1 on 1 and 198 DF
 
 From the Regression table above, the coefficient estimate on TV is 0.047537. It indicates that every $1 they spend on TV advertising, they will sell 0.047537 unit of product. Based on the large t-value and small p-value, we can reject the null hypothesis. Thus, there exists a relationship between TV ad and sales. The adjusted R-squared show how close the data are to the fitted regression line. It is about 60% accurate to the actual regression line. 
-![TV ad vs sales linear regression scatter plot](./images/scatterplot-tv-sales.png)
+![TV ad vs sales linear regression scatter plot](../images/scatterplot-tv-sales.png)
 This scatter plot shows that there is a positive correlation exists between TV ad and sales. There is not any outliers in the group. The sales increase as the TV ads amount increase. Thus, we can reject our null hypothesis.
 
 ##Conclusions
