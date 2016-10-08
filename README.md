@@ -1,4 +1,5 @@
-# Leanne Lee 23581678
+# Leanne Lee 
+## SID: 23581678
 ## Stat 159 Homework 2
 
 ### Basic Project structure
