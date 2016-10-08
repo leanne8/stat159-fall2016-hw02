@@ -1,6 +1,6 @@
 .PHONY: all data clean
 
-all: report/report.pdf report/report.tex data/eda-output.txt data/regression.RData
+all: report/report.pdf data/eda-output.txt data/regression.RData
 
 #download the csv 
 data/Advertising.csv: 
@@ -15,8 +15,5 @@ data/eda-output.txt: code/eda-script.R data/Advertising.csv
 report/report.pdf: report/report.Rmd data/regression.RData images/scatterplot-tv-sales.png
 	pandoc -s report/report.Rmd -o report/report.pdf
 
-report/report.tex: report/report.Rmd data/regression.RData images/scatterplot-tv-sales.png
-	pandoc -s report/report.Rmd -o report/report.tex
-
 clean: 
-	rm -f report/report.pdf report/report.tex
+	rm -f report/report.pdf 
