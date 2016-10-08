@@ -27,15 +27,24 @@ e = error
 
 In R command, we can fit a linear regression model by using the *lm()* command. 
 The null hypothesis is there does not exist a relationship between TV ad and sales. The alternative hypothesis is that there exists a relationship between TV ad and sales. 
+
 ##Results
 
+First, we inspect the historgram of sales and tv as the following:
+
+![Sales histogram](./images/histogram-sales.png)
+![TV ad histogram](./images/histogram-tv.png)
+
+Then we can export tables in Latex using xtable
 ```
 load('./data/regression.RData')
 library(xtable)
-reg_table <- xtable(reg_summary)
-reg_table
+print(xtable(reg_summary, caption = "Regression Coefficients"), comment = FALSE)
 ```
+
+
 ![TV ad vs sales linear regression scatter plot](./images/scatterplot-tv-sales.png)
+This scatter plot shows that there is a positive correlation exists between TV ad and sales. 
 
 ##Conclusions
-This homework shows the relationship between TV advertising and sales. There exists a positive correlation between the TV advertising and sales. In the future, we can apply the same model to radio and newspaper. 
+This homework shows the relationship between TV advertising and sales. There exists a positive correlation between the TV advertising and sales. If the marketing team spend more money on TV advertising, they will generate more sales. Based on the table, we can apply the same linear regression model to radio and newspaper. 
