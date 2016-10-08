@@ -1,8 +1,7 @@
 # Leanne Lee 
-## SID: 23581678
 ## Stat 159 Homework 2
 
-### Basic Project structure
+### Basic Homework structure
 
 ```
 stat159-fall2016-hw02/
